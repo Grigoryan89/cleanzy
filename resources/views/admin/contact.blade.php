@@ -17,7 +17,7 @@
                 <td>{{$item->name}}</td>
                 <td>{{$item->email}}</td>
                 <td>{{$item->phone}}</td>
-                <td>{{$item->message}}</td>
+                <td style="word-break: break-all;">{{$item->message}}</td>
             </tr>
             @endforeach
 

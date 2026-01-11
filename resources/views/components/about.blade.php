@@ -1,30 +1,63 @@
-<!-- about section -->
+<style>
+    /* Generic section styling */
+    .section {
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
 
-<section class="about_section layout_padding mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="img-box">
-                    <img src="images/about-img.png" alt="" />
-                </div>
+    /* Container for each section's content */
+    .section-content {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        align-items: center;
+        justify-content: space-between;
+    }
+    .t-b,
+    .image-block {
+        flex: 1 1 400px; /* Grow/shrink with a minimum width of ~400px */
+        margin: 10px;
+    }
+
+    .text-block-1 {
+        height: 150px;
+        background: white;
+        padding: 40px;
+    }
+    @media (max-width: 992px) {
+        .text-block-1 {
+            padding: 22px;
+        }
+        .text-block p {
+            font-size: 14px;
+        }
+    }
+
+
+</style>
+
+<x-navbar/>
+
+<section class="about_section layout_padding ">
+
+    <section class="section ">
+        <div class="section-content">
+            <div class="image-block">
+                <!-- Replace with your own image -->
+                {{--                <img src="" alt="Droplet Shape">--}}
             </div>
-            <div class="col-md-5">
-                <div class="detail-box">
-                    <div class="custom_heading-container">
-                        <h2>
-                            Մեր Մասին
-                        </h2>
-                    </div>
-
-                    <p>
-                        It is a long established fact that a reader will be distracted
-                        by the readable content of a page when looking at its layout.
-                        The point of using Lorem Ipsum is that it has a more-or-less
-                        normal distribution of letters, as opposed to using 'Content
-                        here , content here', making it
-                    </p>
-                </div>
+            <div class="t-b text-block-1">
+                <p>
+                    Cleanzy Team-ը մատուցում է բնակելի և կոմերցիոն տարածքների մաքրության, ինչպես նաև քիմմաքրման
+                    ծառայություններ:
+                </p>
             </div>
         </div>
-    </div>
+    </section>
 </section>
+

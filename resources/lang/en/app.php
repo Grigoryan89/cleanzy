@@ -31,4 +31,11 @@ return [
         'send' => 'Send',
         'success_messages' => 'Your message has been sent'
     ],
+    'service' =>[
+        'our_services' => "Our Services",
+        'home' => "DEEP SEASONAL HOUSE CLEANING",
+        'const' => "POST-CONSTRUCTION CLEANING",
+        'comme' => "COMMERCIAL AREAS CLEANING",
+        'dry' => "DRY CLEANING OF CARPETS AND RUGS"
+    ]
 ];

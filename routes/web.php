@@ -11,6 +11,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Portfolio\PortfolioLaserController;
 use App\Http\Controllers\Portfolio\PortfolioMillingController;
 use App\Http\Controllers\Portfolio\PortfolioPrintController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,17 +45,18 @@ Route::prefix('portfolio')->group(function () {
             Route::get('print-all', [PortfolioPrintController::class, 'index'])->name('all');
             Route::get('print-show/{id}', [PortfolioPrintController::class, 'show'])->name('show');
         });
-    // portfolio milling controller
-    Route::name('mill.')->group(function () {
-        Route::get('milling-all', [PortfolioMillingController::class, 'index'])->name('all');
-        Route::get('milling-show/{id}', [PortfolioMillingController::class, 'show'])->name('show');
-    });
+
   // portfolio lasers controller
     Route::name('las.')->group(function () {
         Route::get('laser-all', [PortfoliolaserController::class, 'index'])->name('all');
         Route::get('laser-show/{id}', [PortfoliolaserController::class, 'show'])->name('show');
     });
 
+});
+
+// portfolio milling controller
+Route::name('service.')->group(function () {
+    Route::get('service-home', [ServiceController::class, 'home'])->name('home');
 });
 
 
@@ -73,7 +75,7 @@ Route::middleware('admin::auth')->prefix('admin')->group(function () {
 
 
 //login change controllers
-Route::get('admin/trifoliums', [LoginController::class, 'showLoginForm']);
+Route::get('admin/cleanzy', [LoginController::class, 'showLoginForm']);
 Route::post('admin/index', [LoginController::class, 'login'])->name('login');
 
 Auth::routes();

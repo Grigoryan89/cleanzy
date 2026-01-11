@@ -1,13 +1,13 @@
-@extends('layouts.app')
-@section('content')
+{{--@extends('layouts.app')--}}
+{{--@section('content')--}}
 
-    <x-navbar/>
+{{--    <x-navbar/>--}}
 
 
-    <!-- contact section -->
-    <br>
-    <br>
-    <br>
-    <x-partners/>
+{{--    <!-- contact section -->--}}
+{{--    <br>--}}
+{{--    <br>--}}
+{{--    <br>--}}
+{{--    <x-partners/>--}}
 
-@endsection
+{{--@endsection--}}

@@ -1,8 +1,8 @@
-@extends('layouts.app')
-@section('content')
+{{--@extends('layouts.app')--}}
+{{--@section('content')--}}
 
-    <x-navbar/>
+{{--    <x-navbar/>--}}
 
-   <x-portfolio />
+{{--   <x-portfolio />--}}
 
-@endsection
+{{--@endsection--}}

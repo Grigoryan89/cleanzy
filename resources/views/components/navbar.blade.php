@@ -15,13 +15,13 @@
                     <a class="nav-link" href="/service"> {{ __('app.services')}}</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/portfolio">{{ __('app.portfolio')}} </a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="/portfolio">{{ __('app.portfolio')}} </a>--}}
+{{--                </li>--}}
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/partners">{{ __('app.partners')}}</a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="/partners">{{ __('app.partners')}}</a>--}}
+{{--                </li>--}}
 
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">{{ __('app.contact')}}</a>
@@ -30,6 +30,3 @@
         </div>
     </div>
 </div>
-<br>
-<br>
-<br>

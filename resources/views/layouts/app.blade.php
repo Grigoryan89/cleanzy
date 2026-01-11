@@ -7,9 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title> Trifolium Grafics </title>
+    <title> Cleanzy Team </title>
     {{--    title images   --}}
-    <link rel="icon" type="images/x-icon" href="{{asset('images/logo.jpg')}}"/>
+    <link rel="icon" type="images/x-icon" href="{{asset('images/logo.png')}}"/>
 
     <link href="{{asset('css/portfolio.css')}}" rel="stylesheet"/>
     <!-- slider stylesheet -->
@@ -42,17 +42,17 @@
 </head>
 <body>
 
-<div id="app" @if(Request::path() === 'admin/trifoliums') hidden @endif>
+<div id="app" @if(Request::path() === 'admin/cleanzy') hidden @endif>
     <div class="hero_area" style="@if(Request::path() != '/' )   height: auto; @endif">
         <!-- header section strats -->
         <header class="header_section">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
                     <a class="navbar-brand" href="/">
-                        <img src="{{asset('images/logo.jpg')}}" alt=""/>
+                        <img src="{{asset('images/logo.png')}}" alt=""/>
                     </a>
                         <span>
-                          Trifolium Grafics
+                          Cleanzy Team
                         </span>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -60,28 +60,29 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto mr-2">
-                                <li class="nav-item active">
-                                    <a class="nav-link pl-0" href="/">  {{ __('app.home')}} <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/about"> {{ __('app.about')}} </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/portfolio">{{ __('app.portfolio')}} </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/service"> {{ __('app.services')}}</a>
-                                </li>
+{{--                        <div class="collapse navbar-collapse" id="navbarSupportedContent">--}}
+{{--                            <ul class="navbar-nav ml-auto mr-2">--}}
+{{--                                <li class="nav-item active">--}}
+{{--                                    <a class="nav-link pl-0" href="/">  {{ __('app.home')}} <span class="sr-only">(current)</span></a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a class="nav-link" href="/about"> {{ __('app.about')}} </a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a class="nav-link" href="/portfolio">{{ __('app.portfolio')}} </a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a class="nav-link" href="/service"> {{ __('app.services')}}</a>--}}
+{{--                                </li>--}}
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contact">{{ __('app.contact')}}</a>
-                                </li>
-                            </ul>
-                        </div>
+{{--                                <li class="nav-item">--}}
+{{--                                    <a class="nav-link" href="/contact">{{ __('app.contact')}}</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+
                         <div class="call_btn">
-                            {{ __('app.phone')}}: +374(93-83-33-13)
+                            {{ __('app.phone')}}: +374(33-34-00-32)
                         </div>
 
 
@@ -165,13 +166,13 @@
                         <div>
                             <img src="{{asset('images/telephone.png')}}" alt=""/>
                             <p>
-                                 +374(93-83-33-13)
+                                 +374(33-34-00-32)
                             </p>
                         </div>
                         <div>
                             <img src="{{asset('images/envelope.png')}}" alt=""/>
                             <p>
-                                trifoliumgrafics@gmail.com
+                                cleanzyteam@gmail.com
                             </p>
                         </div>
                     </div>
@@ -190,17 +191,12 @@
                             </div>
                             <div>
                                 <a href="">
-                                    <img src="{{asset('images/twitter-logo.png')}}" alt=""/>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
                                     <img src="{{asset('images/instagram.png')}}" alt=""/>
                                 </a>
                             </div>
                             <div>
-                                <a href="">
-                                    <img src="{{asset('images/linkedin-sign.png')}}" alt=""/>
+                                <a href="https://www.tiktok.com/@cleanzyteam">
+                                    <img src="{{asset('images/tik-tok.png')}}" alt=""/>
                                 </a>
                             </div>
                         </div>

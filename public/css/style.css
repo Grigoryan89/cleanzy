@@ -28,11 +28,6 @@ body {
   padding-bottom: 75px;
 }
 
-.custom_heading-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 
 .custom_heading-container h2 {
   color: #000000;
@@ -40,35 +35,17 @@ body {
   position: relative;
 }
 
-.custom_heading-container h2::before {
-  content: "";
-  width: 60px;
-  height: 3px;
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  background-color: #6bd1bd;
-}
-
-.custom_heading-container h2::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 50%;
-  right: -15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: #fb1004;
-  border-radius: 100%;
-}
-
 /*header section*/
 .hero_area {
-  height: 100vh;
-  background-image: url(../images/hero-bg.png);
+  height: 100px;
+  background-image: url(../images/bagraund.jfif);
 }
-
+.service-home{
+    background-image: url(../images/service-home.png);
+}
+.about_section{
+    background-image: url(../images/about_bag.png);
+}
 .sub_page .hero_area {
   height: auto;
 }
@@ -78,7 +55,10 @@ body {
 }
 
 .header_section .active a {
-  color: #0caa7d !important;
+  color: #0d20e5cf !important;
+}
+.content-box{
+    background-color: #0d20e5cf;
 }
 
 .header_section .call_btn {
@@ -233,7 +213,7 @@ a:focus {
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #0caa7d;
+  background-color: #0d20e5cf;
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: center;
@@ -270,7 +250,7 @@ a:focus {
 }
 
 .custom_menu-container {
-  background-color: #0caa7d;
+  background-color: #0d20e5cf;
 }
 
 .custom_menu-container .custom_menu {
@@ -355,7 +335,7 @@ a:focus {
 }
 
 .do_section .content-box img {
-  height: 70px;
+  height: 210px;
   margin: 15px;
 }
 
@@ -368,7 +348,7 @@ a:focus {
 }
 
 .skill_section {
-  background-image: url(../images/skill-bg.jpg);
+  background-image: url(../images/bagraund.jfif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -499,7 +479,7 @@ a:focus {
 
 .client_section .client_box .client-id .name h5 {
   text-transform: uppercase;
-  color: #0caa7d;
+  color: #0d20e5cf;
   font-weight: bold;
 }
 
@@ -525,7 +505,7 @@ a:focus {
 }
 
 .contact_section {
-  background-color: #0ca57a;
+  background-color: #0d20e5cf;
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
@@ -610,7 +590,7 @@ a:focus {
 }
 
 .info_links ul .active::before {
-  background-color: #0caa7d;
+  background-color: #0d20e5cf;
 }
 
 .info_links ul li {
@@ -646,7 +626,7 @@ a:focus {
 }
 
 .info_form button {
-  background-color: #0caa7d;
+  background-color: #0d20e5cf;
   padding: 8px 35px;
   outline: none;
   border: none;
