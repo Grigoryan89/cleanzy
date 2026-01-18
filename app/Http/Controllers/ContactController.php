@@ -29,6 +29,7 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
+        dd('mch');
         $formValidate = $request->validated();
         Contact::create($formValidate);
         return back()->with('success', __('app.success_message_contact'));

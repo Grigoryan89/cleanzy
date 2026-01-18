@@ -37,13 +37,6 @@ class HomeController extends Controller
         return view('portfolio');
     }
 
-    public function showPortfolio(Printing $printing,Milling $milling)
-    {
-        $model1 = $printing::latest()->get();
-        $model2 = $milling::latest()->get();
-        return view('show-portfolio',compact('model1','model2'));
-    }
-
     public function contact()
     {
         return view('contact');

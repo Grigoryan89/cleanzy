@@ -38,22 +38,6 @@ Route::get('/partners', [HomeController::class, 'partners']);
 
 Route::post('contact-us', [ContactController::class, 'store'])->name('contact.store');
 
-
-Route::prefix('portfolio')->group(function () {
-        // portfolio printing controller
-        Route::name('print.')->group(function () {
-            Route::get('print-all', [PortfolioPrintController::class, 'index'])->name('all');
-            Route::get('print-show/{id}', [PortfolioPrintController::class, 'show'])->name('show');
-        });
-
-  // portfolio lasers controller
-    Route::name('las.')->group(function () {
-        Route::get('laser-all', [PortfoliolaserController::class, 'index'])->name('all');
-        Route::get('laser-show/{id}', [PortfoliolaserController::class, 'show'])->name('show');
-    });
-
-});
-
 // portfolio milling controller
 Route::name('service.')->group(function () {
     Route::get('service-home', [ServiceController::class, 'home'])->name('home');
@@ -64,13 +48,6 @@ Route::name('service.')->group(function () {
 Route::middleware('admin::auth')->prefix('admin')->group(function () {
     Route::get('index', [AdminController::class, 'index']);
     Route::get('contact', [AdminController::class, 'contact'])->name('admin.contact');
-
-    //printings
-    Route::prefix('/printings')->resource('printings', PrintingController::class);
-    //millings
-    Route::prefix('/millings')->resource('millings', MillingController::class);
-    //laser
-    Route::prefix('/lasers')->resource('lasers', LaserController::class);
 });
 
 

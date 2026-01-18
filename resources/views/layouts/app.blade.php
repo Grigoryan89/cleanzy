@@ -129,11 +129,11 @@
                                     {{ __('app.about')}}
                                 </a>
                             </li>
-                            <li>
-                                <a class="" href="/portfolio">
-                                    {{ __('app.portfolio')}}
-                                </a>
-                            </li>
+{{--                            <li>--}}
+{{--                                <a class="" href="/portfolio">--}}
+{{--                                    {{ __('app.portfolio')}}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
                             <li>
                                 <a class="" href="/service">
                                     {{ __('app.services')}}
@@ -144,11 +144,11 @@
                                     {{ __('app.contact')}}
                                 </a>
                             </li>
-                            <li>
-                                <a class="" href="/partners">
-                                    {{ __('app.partners')}}
-                                </a>
-                            </li>
+{{--                            <li>--}}
+{{--                                <a class="" href="/partners">--}}
+{{--                                    {{ __('app.partners')}}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
                         </ul>
                     </div>
                 </div>
@@ -179,23 +179,23 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="info_social">
+                    <div class="info_social" style="">
                         <h4>
                             {{ __('app.social_link')}}
                         </h4>
                         <div class="social_container">
                             <div>
-                                <a href="">
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=61572488293280">
                                     <img src="{{asset('images/facebook-logo.png')}}" alt=""/>
                                 </a>
                             </div>
                             <div>
-                                <a href="">
+                                <a target="_blank" href="https://www.instagram.com/cleanzy_team?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                                     <img src="{{asset('images/instagram.png')}}" alt=""/>
                                 </a>
                             </div>
                             <div>
-                                <a href="https://www.tiktok.com/@cleanzyteam">
+                                <a target="_blank" href="https://www.tiktok.com/@cleanzy_team?is_from_webapp=1&sender_device=pc">
                                     <img src="{{asset('images/tik-tok.png')}}" alt=""/>
                                 </a>
                             </div>

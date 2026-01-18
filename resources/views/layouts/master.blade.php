@@ -26,7 +26,7 @@
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'/>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">v
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -72,60 +72,6 @@ font-size: 16px;">
 
                     <li>
                         <a class="active-menu" href="/admin/index"><i class="fa fa-dashboard fa-3x"></i>Գլխաոր</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-print fa-3x"></i>Tpagrutyunner<span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="{{route('printings.index')}}">Tpagrutyun</a>
-                            </li>
-                            <li>
-                                <a href="{{route('millings.index')}}">Frezerovka </a>
-                            </li>
-                            <li>
-                                <a href="{{route('lasers.index')}}">Lazerayin tpagrutyun</a>
-                            </li>
-                            <li>
-                                <a href="#">Ploterayin Ktrvacqner</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-3x"></i> Artaqin Govazd<span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#">Lusavorvox vahanaker</a>
-                            </li>
-                            <li>
-                                <a href="#">Inqnakpchun taxantner</a>
-                            </li>
-                            <li>
-                                <a href="#">Banerner</a>
-                            </li>
-                            <li>
-                                <a href="#">Meqenaneri brendavorum</a>
-                            </li>
-                            <li>
-                                <a href="#">Pastarneri texadrum</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-3x"></i> Dizaynerakan carayutyun<span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#">Lusavorvox vahanaker</a>
-                            </li>
-                            <li>
-                                <a href="#">Jurnali dizayn</a>
-                            </li>
-                            <li>
-                                <a href="#">Artaqin govazdayin dizayn</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
 
