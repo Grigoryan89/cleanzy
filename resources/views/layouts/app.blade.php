@@ -49,11 +49,8 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
                     <a class="navbar-brand" href="/">
-                        <img src="{{asset('images/logo3.png')}}" alt=""/>
+                        <img style="width: 90px" src="{{asset('images/logo3.png')}}" alt=""/>
                     </a>
-                        <span>
-                          Cleanzy
-                        </span>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +79,9 @@
 {{--                        </div>--}}
 
                         <div class="call_btn">
-                            {{ __('app.phone')}}: +374(33-34-00-32)
+                            <a style="color: white" href="tel:+37433340032">
+                                {{ __('app.phone')}}: +374(33-34-00-32)
+                            </a>
                         </div>
 
 
@@ -164,16 +163,16 @@
                             </p>
                         </div>
                         <div>
-                            <img src="{{asset('images/telephone.png')}}" alt=""/>
-                            <p>
-                                 +374(33-34-00-32)
-                            </p>
-                        </div>
-                        <div>
                             <img src="{{asset('images/envelope.png')}}" alt=""/>
                             <p>
                                 cleanzyteam@gmail.com
                             </p>
+                        </div>
+                        <div >
+                            <img src="{{asset('images/telephone.png')}}" alt=""/>
+                            <a style="color: white;top" href="tel:+37433340032">
+                                +374 (33-34-00-32)
+                            </a>
                         </div>
                     </div>
                 </div>

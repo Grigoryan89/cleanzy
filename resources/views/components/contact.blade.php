@@ -1,4 +1,11 @@
+<style>
+    iframe {
+        width: 100%;      /* Ensures it takes the full width of its container */
+        height: 100%;     /* Works with aspect-ratio to set height */
+        aspect-ratio: 16 / 9; /* Sets the proportional relationship (width / height) */
+    }
 
+    </style>
 <br>
 <section class="contact_section" style="padding-bottom: 15px; padding-top: 15px">
     <div class="container-fluid">
@@ -41,6 +48,11 @@
                         </button>
                     </div>
                 </form>
+            </div>
+            <div class="col-md-6 px-0">
+                <div class="img-box">
+                    <iframe width="640" height="360" frameborder="0"  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48778.24873935311!2d44.506698040039055!3d40.17255623903372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sam!4v1769346686450!5m2!1sen!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                </div>
             </div>
             @if ($errors->any())
                 <div class="alert alert-danger">

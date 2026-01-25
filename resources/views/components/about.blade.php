@@ -28,6 +28,7 @@
         height: 150px;
         background: white;
         padding: 40px;
+        border-radius: 15px;
     }
     @media (max-width: 992px) {
         .text-block-1 {
