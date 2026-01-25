@@ -12,7 +12,7 @@ class Contact extends Model
     protected $table = 'contacts';
 
     protected $fillable = [
-        'name', 'email', 'phone','message'
+        'cont_name', 'cont_email', 'cont_phone','cont_message'
     ];
 
 }

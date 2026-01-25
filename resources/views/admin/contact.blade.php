@@ -14,10 +14,10 @@
             </thead>
             @foreach($contact as $item)
             <tr>
-                <td>{{$item->name}}</td>
-                <td>{{$item->email}}</td>
-                <td>{{$item->phone}}</td>
-                <td style="word-break: break-all;">{{$item->message}}</td>
+                <td>{{$item->cont_name}}</td>
+                <td>{{$item->cont_email}}</td>
+                <td>{{$item->cont_phone}}</td>
+                <td style="word-break: break-all;">{{$item->cont_message}}</td>
             </tr>
             @endforeach
 

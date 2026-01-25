@@ -13,7 +13,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        dd('hr');
     }
 
     /**
@@ -27,11 +27,17 @@ class ContactController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreContactRequest $request)
+    public function store(Request $request)
     {
-        dd('mch');
-        $formValidate = $request->validated();
-        Contact::create($formValidate);
+
+        $validatedData = $request->validate([
+            'cont_name'  => 'required',
+            'cont_email'  => 'required',
+            'cont_phone' => 'required|digits_between:9,11|numeric',
+            'cont_message'  => 'required',
+        ]);
+
+         Contact::create( $validatedData);
         return back()->with('success', __('app.success_message_contact'));
     }
 

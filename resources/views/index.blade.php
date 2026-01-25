@@ -12,7 +12,8 @@
     <section class="slider_section" @if(Request::path() != '/') hidden @endif>
         <div class="container-fluid">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="@media screen and (max-width: 479.98px) .carousel-item { width: 100%; padding: 10px; }
+">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-6 col-lg-12">

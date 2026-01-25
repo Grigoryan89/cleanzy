@@ -38,7 +38,7 @@ body {
 /*header section*/
 .hero_area {
   height: 100px;
-  background-image: url(../images/bagraund.jfif);
+  background-image: url(../images/bagraund.jpg);
 }
 .service-home{
     background-image: url(../images/service-home.png);
@@ -63,6 +63,7 @@ body {
 
 .header_section .call_btn {
   margin-left: auto;
+    color: white;
 }
 
 .header_section .call_btn a {

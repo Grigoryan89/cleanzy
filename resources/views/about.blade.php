@@ -37,21 +37,25 @@
             height: 150px;
             background: white;
             padding: 40px;
+            border-radius: 15px;
         }
         .text-block-2 {
             height: 240px;
             background: white;
             padding: 37px;
+            border-radius: 15px;
         }
         .text-block-3 {
             height: 380px;
             background: white;
             padding: 26px;
+            border-radius: 15px;
         }
         .text-block-4 {
             height: 300px;
             background: white;
             padding: 26px;
+            border-radius: 15px;
         }
 
         .text-block h1,
